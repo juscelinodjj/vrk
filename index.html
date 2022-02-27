@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Recortes Kindle</title>
+    <meta name="description" content="Uma maneira simples de visualizar os recortes do Kindle.">
+    <meta name="author" content="https://github.com/juscelinodjj">
+    <meta name="robots" content="index, nofollow">
+    <meta name="theme-color" content="#fff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app-alert.css">
+    <link rel="stylesheet" href="assets/css/app-header.css">
+    <link rel="stylesheet" href="assets/css/app-home.css">
+    <link rel="stylesheet" href="assets/css/app-book.css">
+    <link rel="stylesheet" href="assets/css/app-sidebar.css">
+  </head>
+  <body>
+    <main class="app">
+      <div class="alert"><span class="error"></span></div>
+      <header class="header">
+        <h1 class="title" title="Visualizador de Recortes Kindle">
+          <span class="hide-mobile">Visualizador de Recortes Kindle</span>
+          <span class="hide-non-mobile">VRK</span>
+        </h1>
+        <div class="buttons hide">
+          <button class="button-clear" title="Limpar arquivo carregado"><i class="fa fa-trash"></i></button>
+          <button class="button-menu"><i class="fa fa-bars"></i></button>
+        </div>
+      </header>
+      <section class="home hide">
+        <div class="container">
+          <section class="upload-area">
+            <i class="fa fa-upload"></i>
+            <h2>Carregar arquivo</h2>
+            <span class="disclaimer">O arquivo é processado localmente, apenas <span class="bold">você</span> tem acesso a ele.</span>
+          </section>
+          <section class="help">
+            <h3>Onde encontro o meu arquivo de recortes?</h3>
+            <ol>
+              <li>Conecte seu Kindle via USB</li>
+              <li>Clique no botão carregar arquivo</li>
+              <li>Com o gerenciador de arquivos vá até <span class="bold">/Kindle/documents</span></li>
+              <li>Selecione o arquivo <span class="bold">My Clippings.txt</span></li>
+            </ol>
+            <h3>Onde o meu arquivo é salvo?</h3>
+            <span class="answer">No seu navegador</span>
+            <h3>Como apago o meu arquivo salvo?</h3>
+            <span class="answer">Clicando no ícone de lixeira</span>
+            <h3>Em quais idiomas o arquivo My Clippings.txt é suportado?</h3>
+            <span class="answer">Alemão, Espanhol, Francês, Inglês, Italiano e Português</span>
+          </section>
+        </div>
+      </section>
+      <section class="book hide">
+        <div class="container">
+          <section class="info">
+            <span class="title"></span>
+            <span class="author"></span>
+          </section>
+          <section class="clippings"></section>
+        </div>
+      </section>
+      <nav class="sidebar hide">
+        <div class="container">
+          <ul class="list"></ul>
+        </div>
+      </nav>
+      <input type="file" class="input-file hide" accept=".txt">
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app-local-storage.js"></script>
+    <script src="assets/js/app-alert.js"></script>
+    <script src="assets/js/app-header.js"></script>
+    <script src="assets/js/app-home.js"></script>
+    <script src="assets/js/app-book.js"></script>
+    <script src="assets/js/app-sidebar.js"></script>
+    <script src="assets/js/app-input-file.js"></script>
+    <script src="assets/js/kc2json-web.js"></script>
+  </body>
+</html>

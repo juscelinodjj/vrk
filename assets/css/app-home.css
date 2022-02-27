@@ -1,0 +1,100 @@
+.home {
+  background-color: #fff;
+  height: calc(100% - 50px);  /* header */
+}
+
+.home .container {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  padding-top: 80px;
+}
+
+.home .container .upload-area {
+  background-color: #fdfdff;
+  border: 1px solid #c4c0ff;
+  border-radius: 20px;
+  border-style: dashed;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+  width: 600px;
+}
+
+.home .container .upload-area:hover {
+  cursor: pointer;
+}
+
+.home .container .upload-area .fa {
+  color: #7a72ff;
+  font-size: 40px;
+}
+
+.home .container .upload-area h2 {
+  color: #6C63ff;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.home .container .upload-area .disclaimer {
+  color: #68686d;
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.home .container .help {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 600px;
+}
+
+.home .container .help h3 {
+  color: #6C63ff;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.home .container .help ol {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.home .container .help ol li {
+  color: #68686d;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.home .container .help .answer {
+  color: #68686d;
+  display: block;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 999px) {
+  .home .container {
+    padding: 20px 10px;
+  }
+
+  .home .container .upload-area {
+    width: 100%;
+  }
+
+  .home .container .help {
+    width: 100%;
+  }
+
+  .home .container .help ol {
+    margin-left: 10px;
+  }
+
+  .home .container .help .answer {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,121 @@
+.book {
+  background-color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  height: calc(100% - 50px);  /* header */
+  width: 100%;
+}
+
+.sidebar-actived {
+  display: hide;
+  width: calc(100% - 320px); /* sidebar */
+}
+
+.book .container {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 40px;
+}
+
+.book .container .info {
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.book .container .info .title {
+  color: #959ea0;
+  display: block;
+  font-size: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book .container .info .author {
+  color: #acb3b4;
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.book .container .clippings {
+  height: calc(100% - 83px); /* .container padding 20px +  .info height 53px  + margin top 10px*/
+  margin-top: 10px;
+  overflow: auto;
+  padding: 10px 10px 10px 0;
+}
+
+.book .container .clippings .clipping {
+  border: 1px solid #d4d4d4;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.book .container .clippings .clipping:last-child {
+  margin-bottom: 0;
+}
+
+.book .container .clippings .clipping .text {
+  color: #697678;
+  display: block;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+
+.book .container .clippings .clipping .left {
+  display: inline-block;
+  padding: 5px 0;
+  width: calc(50% - 5px); /* padding-left clipping */
+}
+
+.book .container .clippings .clipping .left span {
+  margin-right: 10px;
+}
+
+.book .container .clippings .clipping .right {
+  display: inline-block;
+  padding: 5px 0;
+  text-align: right;
+  width: calc(50% - 5px); /* padding-right clipping */
+}
+
+.book .container .clippings .clipping .left,
+.book .container .clippings .clipping .right {
+  color: #7a8587;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 999px) {
+  .sidebar-actived {
+    display: none;
+    width: 100%;
+  }
+
+  .book .container {
+    padding: 10px;
+  }
+
+  .book .container .info .title {
+   font-size: 18px;
+  }
+
+  .book .container .clippings {
+    height: calc(100% - 73px); /* .container padding 10px +  .info height 53px  + margin top 10px*/
+    padding: 10px 0 0 0;
+  }
+
+  .book .container .clippings .clipping .right {
+    text-align: left;
+  }
+
+  .book .container .clippings .clipping .left,
+  .book .container .clippings .clipping .right {
+    display: block;
+    width: 100%;
+  }
+}

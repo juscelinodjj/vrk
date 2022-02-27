@@ -1,0 +1,60 @@
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #dedede;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 40px;
+}
+
+.header .title {
+  color: #68686d;
+  display: inline-block;
+  font-size: 18px;
+  padding: 16px 0;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none;
+}
+
+.header .buttons {
+  float: right;
+  margin-top: 10px;
+}
+
+.header .buttons .button-clear {
+  margin-right: 10px;
+}
+
+.header .buttons .button-clear:hover {
+  color: #e74c3c;
+}
+
+.header .buttons .button-menu.active i:before {
+  content: "\f00d";
+}
+
+.header .buttons .button-clear,
+.header .buttons .button-menu {
+  background-color: transparent;
+  border: none;
+  color: #68686d;
+  font-size: 16px;
+  padding: 6px 8px;
+}
+
+.header .buttons .button-clear:hover,
+.header .buttons .button-menu:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 999px) {
+  .header {
+    padding: 0 10px;
+  }
+
+  .header .buttons .button-clear {
+    color: #e74c3c;
+  }
+}
